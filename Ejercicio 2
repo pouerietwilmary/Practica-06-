@@ -1,0 +1,51 @@
+dato=[]
+dato1=[]
+class contacto:
+  nombre="Wilmary"
+  dato.append(nombre)
+  apellido="Soliman"
+  dato.append(apellido)
+  telefono= 8298550078
+  dato.append(telefono)
+  direccion="Guzman bajo mundo"
+  dato.append(direccion)
+  def SetContacto(self):
+    modificar_datos=int(input("¿Cual dato desea modificar?\n 1:Nombre\n2:Apellido\n3:Telefono\n4:Dirrecion\nDigite la opcion aqui: "))
+    if modificar_datos == 1:
+      dato.remove(self.nombre)
+      nuevo_nombre=input("Digite el nuevo nombre:\n")
+      dato.append(nuevo_nombre) 
+      dato1.append(nuevo_nombre) 
+      print(f"Modifico {self.nombre} por {nuevo_nombre}, se realizo correcto el cambio")
+    if modificar_datos == 2: 
+      dato.remove(self.apellido)
+      nuevo_apellido=input("Digite el nuevo apellido:\n ")
+      dato.append(nuevo_apellido)
+      dato1.append(nuevo_apellido)
+      print(f"Modifico {self.apellido} por {nuevo_apellido},se realizo correcto el cambio")
+    if modificar_datos ==3:
+      dato.remove(self.telefono)
+      numero_celuar=input("Escriba su nuevo numero:\n")
+      dato.append(numero_celuar)
+      dato1.append(numero_celuar)
+      print(f"Se ha cambiado {self.telefono} por {numero_celuar}, se realizo correcto el cambio")
+    if modificar_datos ==4:
+      dato.remove(self.direccion)
+      nueva_direccion=input("Escribas su nuevo apellido:\n")
+      dato.append(nueva_direccion)
+      dato1.append(nueva_direccion)
+      print(f"Se ha cambiado {self.direccion} por {nueva_direccion}. se realizo correcto el cambio")
+    else:
+      if modificar_datos < 1 and modificar_datos >4:
+        print("No has cambiado nada.")
+  def saludar (self):
+    print(f"Hola ,como estas?\n{dato}")
+class probarcontactos ():
+  def funcion_principa():
+    print(f"Su datos son {dato}")
+    print(f"Se han cambiados los datos:\n{dato1}")
+llmando_funcion=contacto()
+llmando_funcion.SetContacto()
+llmando_funcion.saludar()  
+llmando_funcion2=probarcontactos()
+probarcontactos.funcion_principa()
