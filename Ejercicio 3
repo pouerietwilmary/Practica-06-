@@ -1,0 +1,21 @@
+class clasea():
+  def init(self,objeto):
+      self.objeto="Wilmary Soliman"
+  def constructor1():
+    print("Hola, bebe.")
+class claseb(clasea):
+  def int(self,casa):
+      self.casa="yeye"
+  def constructor2():
+    print("La vida es bella.")
+class clasec(claseb):
+  def int(self,yoyo):
+      self.yoyo = "yiyi"
+  def constructor3():
+    print("Todo es mental.")
+llamandofuncion=clasea()
+clasea.constructor1()
+llamandofuncion1=claseb()
+claseb.constructor2()
+llamandofuncion2=clasec()
+clasec.constructor3()
