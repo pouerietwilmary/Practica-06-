@@ -1,22 +1,22 @@
 p1=[]
 objeto=[]
 def resposabilidad():
-  print(f"Esto son sus datos:\n{persona}")
+  print(f"Esto son sus datos:\n{Persona}")
   print(f"Este es su sueldo:\n{objeto}")
 class Persona:
   def informaciones(self):
-    self.cedula = int(input('Digite su numero de cedula:\n->'))
+    self.cedula = int(input('Digite su numero de cedula:\n'))
     p1.append(self.cedula)
-    self.nombre = input('Escriba su nombre:\n->')
+    self.nombre = input('Escriba su nombre:\n')
     p1.append(self.nombre)
-    self.apellido = input('Escriba su apellido:\n->')
+    self.apellido = input('Escriba su apellido:\n')
     p1.append(self.apellido)
-    self.edad = int(input("Digite su edad actual:\n->"))
+    self.edad = int(input("Digite su edad actual:\n"))
     p1.append(self.edad)
 
 class profesor(Persona):
   def infoma_cliente (self): 
-    dinero=float(input("Introduzca el cantidad de dinero que desea retirar:\n-> "))
+    dinero=float(input("Introduzca el cantidad de dinero que desea retirar:\n "))
     objeto.append(dinero)
 
 
