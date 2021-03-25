@@ -1,0 +1,8 @@
+baur=[]
+def lista():
+  for x in range (10):
+    enteros=int(input(f"{x+1}:Digite un numero:\n"))
+    baur.append(enteros,)
+lista()
+mostar=baur
+print(f"Su 10 digitos son:\n {baur}"
